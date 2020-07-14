@@ -17,8 +17,27 @@
 
 .btn {
     background-color: var(--secondary-color) !important;
-    color: var(--extra-color) !important;
+    color: #fff !important;
     border: none !important;
+    width: 260px;
+    height: 80px;
+}
+
+.form-control {
+    border-radius: 1em !important;
+    position: relative !important;
+    z-index: 1 !important;
+    padding: 1em !important;
+    height: 80px !important;
+}
+
+.form-inline .btn {
+    border-bottom-right-radius: 1em !important;
+    border-top-right-radius: 1em !important;
+    margin-left: -260px !important;
+    position: relative !important;
+    z-index: 2 !important;
+    -webkit-appearance: none !important;
 }
 
 body {
@@ -112,24 +131,8 @@ body {
 }
 
 #footer .form-inline {
-    width: 50%;
+    width: 80%;
     margin: auto;
-}
-
-.form-control {
-    border-radius: 1em !important;
-    position: relative !important;
-    z-index: 1 !important;
-    padding: 1em !important;
-}
-
-.form-inline .btn {
-    border-bottom-right-radius: 1em !important;
-    border-top-right-radius: 1em !important;
-    margin-left: -92px !important;
-    position: relative !important;
-    z-index: 2 !important;
-    -webkit-appearance: none !important;
 }
 
 #footer_copyright {
