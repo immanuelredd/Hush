@@ -12,10 +12,10 @@
 
 <body>
 
-
-    <!--header start-->
-    <header id="header">
-        <div id="nav">
+    <!--Wrapper-->
+    <div class="wrapper">
+        <!--header start-->
+        <header id="header">
             <nav class="navbar navbar-expand-lg" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="assets/images/Group 2.png" alt=""></a>
@@ -37,11 +37,12 @@
                 </div>
             </nav>
             <div id="header_text">
-                <div class="container-lg text-left">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-7 w-100">
+                        <div class="col-sm-6">
                             <h1 id="header_one">Focus on what <br> matters most to you!</h1>
-                            <p> Connect your earplugs to the app and get rid of all the noise and drama around you.</p>
+                            <p> Connect your earplugs to the app and get rid of all the noise and drama around you.
+                            </p>
                             <div>
                                 <p><span>Coming Soon!</span> Get notified when we launch.</p>
                                 <form class="form-inline my-2 my-lg-0" method="POST" action="sendemail.php">
@@ -53,98 +54,118 @@
                             </div>
 
                         </div>
-                        <div class="col-sm-5 w-100">
-                            <div class=" text-center">
-                                <img src="assets/images/Group 2.png">
+                        <div class="col-sm-6 header_hero">
+                            <div class="justify-content-md-center">
+                                <div class="row">
+                                    <div class="col-sm-6 text-left">
+                                        <img src="assets/images/Ellipse 7.png" alt="">
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+                                        <img src="assets/images/Ellipse 9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row fixed-image">
+                                    <div class="col-sm-12 text-center">
+                                        <img src="assets/images/Ellipse 6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 text-left">
+                                        <img src="assets/images/Ellipse 9.png" alt="">
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+                                        <img src="assets/images/Ellipse 7.png" alt="">
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
             </div>
+        </header>
+        <!--header end-->
 
-        </div>
-
-
-    </header>
-    <!--header end-->
-
-    <!--Hero-->
-    <main id="main">
-        <div id="hero">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 w-100">
-                        <ul>
-                            <li>Are you sensitive to noise?</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 w-100">
-                        <ul>
-                            <li>Do you have a problem focusing on important stuff</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 w-100">
-                        <ul>
-                            <li>Does noise stress you out?</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 w-100">
-                        <ul>
-                            <li>Does incessant talk piss you off?</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-    <!--End Hero-->
-
-    <!----footer start-->
-    <footer id="footer">
-        <div id="main_footer">
-
-            <div class="container   id=" footer_text">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <p>Coming Soon! Get notified when we launch.</p>
-                            <form class="form-inline">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Your Email Address"
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Notify me</button>
-                            </form>
+        <!--Hero-->
+        <main id="main">
+            <div id="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 w-100">
+                            <ul>
+                                <li>Are you sensitive to noise?</li>
+                            </ul>
                         </div>
-
-
+                        <div class="col-md-6 w-100">
+                            <ul>
+                                <li>Do you have a problem focusing on important stuff</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 w-100">
+                            <ul>
+                                <li>Does noise stress you out?</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 w-100">
+                            <ul>
+                                <li>Does incessant talk piss you off?</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
 
-        </div>
-        <div id="footer_copyright">
-            <div class="container" id="copyright">
-                <p>(c) 2020 Hush. All Rights Reserved </p>
+        </main>
+        <!--End Hero-->
+
+        <!----footer start-->
+        <footer id="footer">
+            <div id="main_footer">
+
+                <div class="container  id=" footer_text">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <p>Coming Soon! Get notified when we launch.</p>
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Your Email Address"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Notify
+                                        me</button>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
-        </div>
-    </footer>
-    <!----footer End-->
+            <div id="footer_copyright">
+                <div class="container" id="copyright">
+                    <p>(c) 2020 Hush. All Rights Reserved </p>
+                </div>
+            </div>
+        </footer>
+        <!----footer End-->
+    </div>
+    <!--End Wrapper-->
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
