@@ -1,5 +1,5 @@
 <?php
-$email =filter_input(INPUT_POST, 'email') ;
+$email =filter_input(INPUT_POST, 'email');
 if (!empty($email)) {
 $host ='localhost';
 $dbusername = 'root';

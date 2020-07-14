@@ -10,13 +10,15 @@
     --secondary-color: #F64E2D;
     --tertiary-color: #2D0077;
     --extra-color: #E5E5E5;
+    --lite-color: #f64e2d08;
     --main-font: 'Proxima nova',
         sans-serif;
 }
 
 .btn {
-    background-color: var(--primary-color);
-    color: var(--extra-color);
+    background-color: var(--primary-color) !important;
+    color: var(--extra-color) !important;
+    border: none !important;
 }
 
 body {
@@ -24,6 +26,7 @@ body {
     width: 100%;
     margin: auto;
 }
+
 
 #header {
     background-color: #fff;
@@ -59,9 +62,7 @@ body {
 }
 
 
-
 #main {
-
     margin: auto;
     margin-top: 10em;
     text-align: center !important;
@@ -70,10 +71,10 @@ body {
 }
 
 #hero {
-    background-color: var(--extra-color);
+    background-color: var(--lite-color);
     color: var(--main-color);
-    padding: 6em 4em;
 }
+
 
 #hero ul {
     list-style-type: none;
@@ -111,10 +112,23 @@ body {
 }
 
 #footer .form-inline {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.form-control {
+    border-radius: 1em !important;
+    position: relative !important;
+    z-index: 1 !important;
+    padding: 1em !important;
+}
+
+.form-inline .btn {
+    border-radius: 1em !important;
+    margin-left: -90px !important;
+    position: relative !important;
+    z-index: 2 !important;
+    -webkit-appearance: none !important;
 }
 
 #footer_copyright {
@@ -122,7 +136,7 @@ body {
     color: white; */
     text-align: center;
     padding: 1em;
-    font-family: var(--general-font);
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
