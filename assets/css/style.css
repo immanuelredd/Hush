@@ -16,7 +16,7 @@
 }
 
 .btn {
-    background-color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
     color: var(--extra-color) !important;
     border: none !important;
 }
@@ -124,8 +124,9 @@ body {
 }
 
 .form-inline .btn {
-    border-radius: 1em !important;
-    margin-left: -90px !important;
+    border-bottom-right-radius: 1em !important;
+    border-top-right-radius: 1em !important;
+    margin-left: -92px !important;
     position: relative !important;
     z-index: 2 !important;
     -webkit-appearance: none !important;
