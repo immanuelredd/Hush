@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #2B303A;
+    --primary-color: #FF9F1C;
+    --secondary-color: #F64E2D;
+    --tertiary-color: #2D0077;
+    --extra-color: #E5E5E5;
+    --main-font: 'Proxima nova',
+        sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+#header {
+    background-color: #fff;
+    width: 1440px !important;
+    height: 600px !important;
+}
+
+#header_text {
+    position: relative !important;
+    transform: translateY(25%);
+    font-family: var(--main-font);
+    margin: auto;
+}
+
+#header_one {
+    color: var(--tertiary-color);
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+}
+
+#header p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+#header span {
+    color: var(--primary-color);
+}
+
+
+
+#main {
+    width: 1440px;
+    height: 700px;
+    margin: auto;
+    margin-top: 10em;
+    text-align: center !important;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+#hero {
+    background-color: var(--extra-color);
+    color: var(--main-color);
+    width: 1440px;
+    height: 600px;
+    padding: 6em 4em;
+}
+
+#hero ul {
+    list-style-type: none;
+    font-family: var(--main-font);
+    width: 100%;
+    margin: auto;
+}
+
+#hero ul li:before {
+    content: '✓';
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--main-color);
+    border-radius: 50%;
+}
+
+#hero li {
+    margin: 0;
+    text-align: left;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 58px
+}
+
+#footer {
+    background-color: var(--tertiary-color) !important;
+    color: #fff;
+}
+
+#main_footer {
+    padding: 14em 0;
+    width: 1440px;
+    height: 450px;
+    margin: auto;
+}
+
+#footer .form-inline {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#footer_copyright {
+    /* background: #00BF7A !important;
+    color: white; */
+    width: 1440px;
+    height: 80px;
+    text-align: center;
+    padding: 1em;
+    font-family: var(--general-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
