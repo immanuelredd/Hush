@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----<link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Hush</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --main-color: #2B303A;
+            --primary-color: #FF9F1C;
+            --secondary-color: #F64E2D;
+            --tertiary-color: #2D0077;
+            --extra-color: #E5E5E5;
+            --lite-color: #f64e2d08;
+            --main-font: 'Proxima nova',
+                sans-serif;
+        }
+
+        .btn {
+            background-color: var(--secondary-color) !important;
+            color: #fff !important;
+            border: none !important;
+            width: 230px;
+            height: 80px;
+        }
+
+        .form-control {
+            font-family: var(--main-font) !important;
+            border-radius: 2em !important;
+            position: relative !important;
+            z-index: 1 !important;
+            padding: 1em !important;
+            width: 370px !important;
+            height: 80px !important;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px !important;
+            line-height: 34px !important;
+        }
+
+        .form-inline .btn {
+            font-family: var(--main-font) !important;
+            border-bottom-right-radius: 2em !important;
+            border-top-right-radius: 2em !important;
+            margin-left: -230px !important;
+            position: relative !important;
+            z-index: 2 !important;
+            -webkit-appearance: none !important;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        h3 {
+            font-family: var(--main-font);
+            color: var(--tertiary-color);
+            font-style: normal !important;
+            font-weight: 800 !important;
+            font-size: 48px !important;
+            line-height: 58px !important;
+        }
+
+        #productivity p,
+        #save p {
+            font-family: var(--main-font);
+            color: var(--main-color);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        body {
+            background-color: #fff;
+            width: 100%;
+            margin: auto;
+        }
+
+
+        #header {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+
+        #header_text {
+            position: relative !important;
+            transform: translateY(10%);
+            font-family: var(--main-font) !important;
+            width: 95%;
+            margin: auto;
+        }
+
+        #header_one {
+            font-family: var(--main-font) !important;
+            color: var(--tertiary-color);
+            font-style: normal;
+            font-weight: 800 !important;
+            font-size: 64px !important;
+            line-height: 78px !important;
+        }
+
+        #header p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px !important;
+            line-height: 48px !important;
+        }
+
+        #header span {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        #form-div p {
+            font-style: normal;
+            font-size: 32px !important;
+            line-height: 39px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--header start-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/images/logo_2.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link active"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="btn_one"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="header_text">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 pt-3 pr-4 w-100">
+                        <h1 id="header_one">Focus on what <br> matters most to you!</h1>
+                        <p> Connect your earplugs to the app and get rid of all the noise and drama around you.
+                        </p>
+                        <div id="form-div">
+                            <p><span>Coming Soon!</span> Get notified when we launch.</p>
+                            <form method="POST" action="sendemail.php" class="input-group form-inline">
+                                <input type="text" class="form-control" placeholder="Your Email Address"
+                                    aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                <div class="input-group-prepend">
+                                    <button type="submit" class="btn btn-primary">Notify
+                                        me</button></span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 pb-5 pl-5 w-50">
+                        <div class="justify-content-md-center">
+                            <div class="row">
+                                <div class="col-sm-6 text-left m-auto" height="30%" width="30%">
+                                    <svg width="90" height="90" viewBox="0 0 105 105" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="52.2" cy="52.2" r="52.2" fill="#FF9F1C" />
+                                    </svg>
+
+                                </div>
+                                <div class="col-sm-6 text-right m-auto" height="30%" width="30%">
+                                    <svg width="90" height="90" viewBox="0 0 105 105" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="52.2" cy="52.2" r="52.2" fill="#F64E2D" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="row fixed-image">
+                                <div class="col-sm-12 text-center m-auto" height="50%" width="50%" class="fixed-img">
+                                    <svg width="300" height="300" viewBox="0 0 342 342" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="171" cy="171" r="170.449" fill="#2D0077" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 text-left m-auto" height="30%" width="30%">
+                                    <svg width="90" height="90" viewBox="0 0 105 105" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="52.2" cy="52.2" r="52.2" fill="#F64E2D" />
+                                    </svg>
+
+                                </div>
+                                <div class="col-sm-6 text-right m-auto" height="30%" width="30%">
+                                    <svg width="90" height="90" viewBox="0 0 105 105" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="52.2" cy="52.2" r="52.2" fill="#FF9F1C" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
