@@ -35,6 +35,13 @@
      --paragraph-font: Proxima Regular;
  }
 
+ #features,
+ #productivity,
+ #save {
+     width: 100% !important;
+     height: 100vh !important;
+ }
+
  body {
      background-color: #fff;
      width: auto !important;
@@ -438,8 +445,6 @@
  #footer {
      background-color: var(--tertiary-color) !important;
      color: #fff;
-     position: relative;
-     top: 0;
  }
 
  #footer_text h3 {
