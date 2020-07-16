@@ -12,8 +12,7 @@
     font-family: 'Proxima Nova Condensed Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Proxima Nova Condensed Regular'),
-        url('assets/fonts/Mark Simonson  Proxima Nova Condensed Regular TheFontsMaster.com.woff') format('woff');
+    src: local('Proxima Nova Condensed Regular'), url('Mark Simonson  Proxima Nova Condensed Regular TheFontsMaster.com.woff') format('woff');
 }
 
 
@@ -29,8 +28,7 @@
     font-family: 'Proxima Nova Condensed Thin';
     font-style: normal;
     font-weight: normal;
-    src: local('Proxima Nova Condensed Thin'),
-        url('assets/fonts/Mark Simonson  Proxima Nova Condensed Thin TheFontsMaster.com.woff') format('woff');
+    src: local('Proxima Nova Condensed Thin'), url('Mark Simonson  Proxima Nova Condensed Thin TheFontsMaster.com.woff') format('woff');
 }
 
 
@@ -94,8 +92,7 @@
     font-family: 'Proxima Nova Condensed Extrabold';
     font-style: normal;
     font-weight: normal;
-    src: local('Proxima Nova Condensed Extrabold'),
-        url('assets/fonts/Mark Simonson  Proxima Nova Extra Condensed Extrabold TheFontsMaster.com.woff') format('woff');
+    src: local('Proxima Nova Condensed Extrabold'), url('Mark Simonson  Proxima Nova Condensed Extrabold TheFontsMaster.com.woff') format('woff');
 }
 
 
