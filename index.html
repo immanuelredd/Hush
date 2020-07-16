@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://kit.fontawesome.com/afad5444a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Hush</title>
 </head>
 
@@ -17,7 +17,7 @@
     <div class="wrapper">
         <!--header start-->
         <header id="header">
-            <nav class="navbar navbar-expand-lg" id="navbar">
+            <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="assets/images/logo_2.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -27,28 +27,190 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a href="index.html" class="nav-link active"></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" id="btn_one"></a>
+                            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">productivity</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Save</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="btn_one">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div id="header_text">
+            <div id="header_body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 text-justify text-left">
-                            <h1 id="header_one">Focus on what <br> matters most to you!</h1>
+                        <div class="col-md-6 text-justify text-left mt-3">
+                            <div class=" w-100" id="header_content">
+                                <h1 id="header_one">Focus on what <br> matters most to you!</h1>
+                                <p>
+                                    With the aid of our Noise Cancelling Technology (NRT),connect your
+                                    bluetooth-enabled
+                                    earplugs to the app and get rid of all the noise and drama around you.
+                                </p>
+                                <div id="form-div">
+                                    <p><span>Coming Soon!</span> Get notified when we launch.</p>
+                                    <form method="POST" action="send.php" class="form-inline" id="footer_form">
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="Your Email Address" aria-label="Input group example"
+                                            aria-describedby="btnGroupAddon">
+                                        <div class="input-group-prepend">
+                                            <button type="submit" class="btn btn-primary">Notify
+                                                me</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <div id="header_image" class="w-100  mt-3">
+                                <img src="assets/images/header_pattern_2.svg" alt="" class="img-fluid m-auto"
+                                    id="pattern_2">
+                                <img src="assets/images/iPhoneX_1.svg" alt="" class="img-fluid" id="iphone_1">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--Features-->
+        <section id="features">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="features" id="bluetooth">
+                            <img src="assets/images/feature_bluetooth.svg" alt="">
+                            <h2>Connect</h2>
                             <p>
-                                With the aid of our Noise Cancelling Technology (NRT),connect your bluetooth-enabled
-                                earplugs to the app and get rid of all the noise and drama around you.
+                                Connect your bluetooth-enabled earplugs to the Hush app and rid yourself of all the
+                                noise.
                             </p>
-                            <div id="form-div">
-                                <p><span>Coming Soon!</span> Get notified when we launch.</p>
-                                <form method="POST" action="send.php" class="form-inline" id="footer_form">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="features" id="settings">
+                            <img src="assets/images/feature_settings.svg" alt="">
+                            <h2>Control</h2>
+                            <p>
+                                Control the intensity of the noise cancellation to your preferred setting.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="features" id="focus">
+                            <img src="assets/images/feature_focus.svg" alt="">
+                            <h2>Concentrate</h2>
+                            <p>
+                                Focus on what matters the most and see yourself being more productivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Features-->
+
+        <!--Product Section One-->
+        <section id="productivity" class="mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="container" id="productivity-images">
+                            <div class="productivity-images">
+                                <img src="assets/images/Ellipse_2.svg" alt="" id="ecllipse_1">
+
+                                <div class="iphoneX_2">
+                                    <img src="assets/images/iPhoneX_2.svg" alt="" id="iphoneX_2">
+                                </div>
+                                <img src="assets/images/Ellipse_1.svg" alt="" id="ecllipse_2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="productivity-content">
+                            <h2>More productivity with less noise</h2>
+                            <p>
+                                Rid yourself of distractions from environmental noise and find yourself accomplishing
+                                more
+                                on your to-do list.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--End Product Section One-->
+
+        <!--Product Section two-->
+        <section id="save" class="mt-5 mb-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="save-content">
+                            <h2>Save yourself from from noise-related stress</h2>
+                            <p>
+                                Noise pollution isn’t just annoying, it’s bad for your health.The hush app helps
+                                you
+                                block
+                                out noise around you with its
+                                noise reduction feature.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="container" id="save-images">
+                            <div class="save-images">
+                                <img src="assets/images/Ellipse_2.svg" alt="" id="ecllipse_1">
+
+                                <div class="iphoneX_2">
+                                    <img src="assets/images/iPhoneX_3.svg" alt="" id="iphoneX_2">
+                                </div>
+                                <img src="assets/images/Ellipse_1.svg" alt="" id="ecllipse_2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--End Product Section two-->
+
+        <!--Product Section three-->
+        <section id="users" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12" id="users-content">
+                        <h2 class="text-center">Hush is for everyone. Everyone who wants freedom from noise</h2>
+                        <div class="text-center mt-5">
+                            <img src="assets/images/iPhoneX_4.svg" alt="" height="80%">
+                            <img src="assets/images/iPhoneX_5.svg" alt="" height="100%">
+                            <img src="assets/images/iPhoneX_6.svg" alt="" height="80%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Product Section three-->
+        <!--End content-->
+
+        <!--footer start-->
+        <footer id="footer">
+            <div id="main_footer">
+
+                <div class="container" id="footer_text">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <h3>Be the first to be notified when we launch</h3>
+                                <form method="POST" action="send.php"
+                                    class="form-inline justify-content-center text-center" id="footer_form">
                                     <input type="email" name="email" id="email" class="form-control"
                                         placeholder="Your Email Address" aria-label="Input group example"
                                         aria-describedby="btnGroupAddon">
@@ -59,22 +221,38 @@
                                 </form>
                             </div>
 
-                        </div>
-                        <div class="col-md-6 col-sm-12 text-center">
-                            <div id="header_image">
-                                <img src="assets/images/pattern_2.svg" alt="" class="img-fluid m-auto">
-                            </div>
 
                         </div>
                     </div>
+
+
+                </div>
+
+            </div>
+            <div id="footer_copyright">
+                <div class="container" id="copyright">
+                    <p>(c) 2020 Hush. All Rights Reserved </p>
                 </div>
             </div>
-        </header>
-        <!--header end-->
+        </footer>
+        <!--footer End-->
 
-        <!--content-->
+    </div>
+    <!--End Wrapper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
 
-        <!--Hero--
+</html>
+
+<!--Hero--
         <main id="main">
             <div>
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,168 +333,3 @@
 
         </main>
         --End Hero-->
-
-        <!--Features-->
-        <section id="features" class="mt-5 mb-5">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <div class="features">
-                            <img src="" alt="">
-                            <h2>Connect</h2>
-                            <p>
-                                Connect your bluetooth-enabled earplugs to the Hush app and rid yourself of all the
-                                noise.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="features">
-                            <img src="" alt="">
-                            <h2>Control</h2>
-                            <p>
-                                Control the intensity of the noise cancellation to your preferred setting.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="features">
-                            <img src="" alt="">
-                            <h2>Concentrate</h2>
-                            <p>
-                                Focus on what matters the most and see yourself being more productivity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Features-->
-
-        <!--Product Section One-->
-        <section id="productivity" class="mt-5 mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="container">
-                            <div id="productivity_image"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="container pt-5">
-                            <h2>More productivity with less noise</h2>
-                            <p>
-                                Rid yourself of distractions from environmental noise and find yourself accomplishing
-                                more
-                                on your to-do list.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!--End Product Section One-->
-
-        <!--Product Section two-->
-        <section id="save" class="mt-5 mb-5">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="container pt-5">
-                            <h2>Save yourself from from noise-related stress.</h2>
-                            <p>
-                                Noise pollution isn’t just annoying, it’s bad for your health.The hush app helps you
-                                block
-                                out noise around you with its
-                                noise reduction feature.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="container">
-                            <div id="save_image">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Product Section two-->
-
-        <!--Product Section three-->
-        <section id="users" class="mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="text-center">Hush is for everyone. Everyone who wants freedom from noise.</h2>
-                        <div class="text-center mt-5">
-                            <img src="assets/images/X.svg" alt="" height="80%">
-                            <img src="assets/images/X.svg" alt="" height="100%">
-                            <img src="assets/images/X.svg" alt="" height="80%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Product Section three-->
-        <!--End content-->
-
-
-        <!--footer start-->
-        <footer id="footer">
-            <div id="main_footer">
-
-                <div class="container" id="footer_text">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <p>Be the first to be notified when we launch</p>
-                                <form method="POST" action="send.php"
-                                    class="form-inline justify-content-center text-center" id="footer_form">
-                                    <input type="email" name="email" id="email" class="form-control"
-                                        placeholder="Your Email Address" aria-label="Input group example"
-                                        aria-describedby="btnGroupAddon">
-                                    <div class="input-group-prepend">
-                                        <button type="submit" class="btn btn-primary">Notify
-                                            me</button>
-                                    </div>
-                                </form>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-            <div id="footer_copyright">
-                <div class="container" id="copyright">
-                    <p>(c) 2020 Hush. All Rights Reserved </p>
-                </div>
-            </div>
-        </footer>
-        <!--footer End-->
-    </div>
-    <!--End Wrapper-->
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
