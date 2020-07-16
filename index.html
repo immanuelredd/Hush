@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
     <script src="https://kit.fontawesome.com/afad5444a3.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Hush</title>
@@ -29,7 +31,7 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">productivity</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Productivity</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Save</a></li>
                             <li class="nav-item"><a href="#" class="nav-link" id="btn_one">Contact Us</a>
                             </li>
@@ -39,10 +41,11 @@
             </nav>
             <div id="header_body">
                 <div class="container">
-                    <div class="row">
+                    <div class="row pt-5">
                         <div class="col-md-6 text-justify text-left mt-3">
-                            <div class=" w-100" id="header_content">
-                                <h1 id="header_one">Focus on what <br> matters most to you!</h1>
+                            <div class="w-100" id="header_content" data-aos="fade-down-left" data-aos-duration="1000">
+                                <h1 id="header_one" class="animate__animated animate__bounce">Focus on what <br> matters
+                                    most to you!</h1>
                                 <p>
                                     With the aid of our Noise Cancelling Technology (NRT),connect your
                                     bluetooth-enabled
@@ -65,7 +68,8 @@
 
                         </div>
                         <div class="col-md-6 col-sm-12 text-center">
-                            <div id="header_image" class="w-100  mt-3">
+                            <div id="header_image" class="w-100  mt-3 text-center" data-aos="zoom-in"
+                                data-aos-duration="2000">
                                 <img src="assets/images/header_pattern_2.svg" alt="" class="img-fluid m-auto"
                                     id="pattern_2">
                                 <img src="assets/images/iPhoneX_1.svg" alt="" class="img-fluid" id="iphone_1">
@@ -82,7 +86,7 @@
         <section id="features">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="2000">
                         <div class="features" id="bluetooth">
                             <img src="assets/images/feature_bluetooth.svg" alt="">
                             <h2>Connect</h2>
@@ -92,7 +96,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="features" id="settings">
                             <img src="assets/images/feature_settings.svg" alt="">
                             <h2>Control</h2>
@@ -101,9 +105,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-out">
                         <div class="features" id="focus">
-                            <img src="assets/images/feature_focus.svg" alt="">
+                            <img src="assets/images/feature_focus.svg" alt="" data-aos-duration="2000">
                             <h2>Concentrate</h2>
                             <p>
                                 Focus on what matters the most and see yourself being more productivity.
@@ -116,11 +120,12 @@
         <!--End Features-->
 
         <!--Product Section One-->
-        <section id="productivity" class="mt-5 mb-5">
+        <section id="productivity">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="container" id="productivity-images">
+                        <div class="container" id="productivity-images" data-aos="zoom-in-down"
+                            data-aos-duration="1000">
                             <div class="productivity-images">
                                 <img src="assets/images/Ellipse_2.svg" alt="" id="ecllipse_1">
 
@@ -132,7 +137,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="productivity-content">
+                        <div class="productivity-content" data-aos="zoom-out-right" data-aos-duration="2000">
                             <h2>More productivity with less noise</h2>
                             <p>
                                 Rid yourself of distractions from environmental noise and find yourself accomplishing
@@ -148,12 +153,12 @@
         <!--End Product Section One-->
 
         <!--Product Section two-->
-        <section id="save" class="mt-5 mb-5">
+        <section id="save">
 
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="save-content">
+                        <div class="save-content" data-aos="fade-down-left" data-aos-duration="1000">
                             <h2>Save yourself from from noise-related stress</h2>
                             <p>
                                 Noise pollution isn’t just annoying, it’s bad for your health.The hush app helps
@@ -166,7 +171,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="container" id="save-images">
-                            <div class="save-images">
+                            <div class="save-images" data-aos="fade-up-left" data-aos-duration="2000">
                                 <img src="assets/images/Ellipse_2.svg" alt="" id="ecllipse_1">
 
                                 <div class="iphoneX_2">
@@ -189,9 +194,12 @@
                     <div class="col-sm-12" id="users-content">
                         <h2 class="text-center">Hush is for everyone. Everyone who wants freedom from noise</h2>
                         <div class="text-center mt-5">
-                            <img src="assets/images/iPhoneX_4.svg" alt="" height="80%">
-                            <img src="assets/images/iPhoneX_5.svg" alt="" height="100%">
-                            <img src="assets/images/iPhoneX_6.svg" alt="" height="80%">
+                            <img src="assets/images/iPhoneX_4.svg" alt="" height="80%" data-aos="flip-down"
+                                data-aos-duration="1000">
+                            <img src="assets/images/iPhoneX_5.svg" alt="" height="100%" data-aos="flip-up"
+                                data-aos-duration="2000">
+                            <img src="assets/images/iPhoneX_6.svg" alt="" height="80%" data-aos="zoom-in-left"
+                                data-aos="3000">
                         </div>
                     </div>
                 </div>
@@ -239,6 +247,13 @@
 
     </div>
     <!--End Wrapper-->
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -248,88 +263,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
-
-<!--Hero--
-        <main id="main">
-            <div>
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="30" cy="30" r="30" fill="#F64E2D" />
-                    <path d="M18 24.3999L30 36.3999L41.9999 24.3999L46.7999 26.7999L30 43.5999L13.2 26.7999L18 24.3999Z"
-                        fill="white" />
-                </svg>
-            </div>
-
-            <div id="hero">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#FFF" fill-opacity="1"
-                        d="M0,160L40,165.3C80,171,160,181,240,192C320,203,400,213,480,197.3C560,181,640,139,720,133.3C800,128,880,160,960,181.3C1040,203,1120,213,1200,202.7C1280,192,1360,160,1400,144L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
-                    </path>
-                </svg>
-                <div class="container">
-
-                    <div class="row mb-5 pb">
-                        <div class="col-md-6 w-100">
-                            <span><svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="30" cy="30" r="30" fill="#F64E2D" />
-                                    <path d="M12 31.4L15.6 27.8L24.6 36.8L44.4 17L48 20.6L24.6 44L12 31.4Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                            <p>
-                                Are you sensitive to noise?
-                            </p>
-                        </div>
-                        <div class="col-md-6 w-100">
-                            <span><svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="30" cy="30" r="30" fill="#FF9F1C" />
-                                    <path d="M12 31.4L15.6 27.8L24.6 36.8L44.4 17L48 20.6L24.6 44L12 31.4Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                            <p>
-                                Do you have a problem focusing on important stuff
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 w-100">
-                            <span><svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="30" cy="30" r="30" fill="#FF9F1C" />
-                                    <path d="M12 31.4L15.6 27.8L24.6 36.8L44.4 17L48 20.6L24.6 44L12 31.4Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                            <p>
-                                Does noise stress you out?
-                            </p>
-
-                        </div>
-                        <div class="col-md-6 w-100">
-                            <span><svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="30" cy="30" r="30" fill="#F64E2D" />
-                                    <path d="M12 31.4L15.6 27.8L24.6 36.8L44.4 17L48 20.6L24.6 44L12 31.4Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                            <p>
-                                Does incessant talk piss you off?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#FFF" fill-opacity="1"
-                        d="M0,160L40,165.3C80,171,160,181,240,192C320,203,400,213,480,197.3C560,181,640,139,720,133.3C800,128,880,160,960,181.3C1040,203,1120,213,1200,202.7C1280,192,1360,160,1400,144L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-                    </path>
-                </svg>
-            </div>
-
-        </main>
-        --End Hero-->
