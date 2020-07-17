@@ -5,8 +5,19 @@
      margin: 0;
  }
 
+ @font-face {
+     font-family: 'Proxima Nova';
+     font-style: normal;
+     font-weight: 800;
+     src: url('/assets/fonts/ProximaNovaCondensedBlack.woff');
+ }
 
-
+ @font-face {
+     font-family: 'Proxima Regular';
+     font-style: normal;
+     font-weight: normal;
+     src: url('/assets/fonts/ProximaNovaCondensedLight.woff');
+ }
 
  :root {
      --main-color: #2B303A;
@@ -20,8 +31,15 @@
      --genral-wcolor: #FFFFFF;
      --genral-bcolor: #000000;
      --new-sectionbg: #FBF9FF;
-     --header-font: 'Proxima Nova Condensed Extrabold';
-     --paragraph-font: 'Proxima Nova Condensed Regular';
+     --header-font: Proxima Nova;
+     --paragraph-font: Proxima Regular;
+ }
+
+ #features,
+ #productivity,
+ #save {
+     width: 100% !important;
+     height: 100vh !important;
  }
 
  body {
@@ -41,7 +59,6 @@
  h2 {
      font-family: var(--header-font);
      color: var(--tertiary-color);
-     font-style: normal !important;
      font-weight: 900 !important;
      font-size: 48px !important;
      line-height: 58px !important;
@@ -88,9 +105,8 @@
      color: var(--main-color);
  }
 
- .nav-bar {
-     position: relative;
-     z-index: 1;
+ .navbar {
+     background-color: var(--genral-wcolor) !important;
  }
 
  .navbar-toggler {
@@ -107,7 +123,7 @@
  }
 
  .nav-link {
-     font-family: var(--main-font) !important;
+     font-family: var(--paragraph-font) !important;
      font-size: 24px !important;
      color: var(--tertiary-color);
  }
@@ -121,13 +137,13 @@
      z-index: 2;
      transform: translateY(10%);
      font-family: var(--main-font) !important;
+     padding-top: 2em;
  }
 
  #header p {
-     font-style: normal !important;
-     font-weight: normal !important;
-     font-size: 24px !important;
-     line-height: 36px !important;
+     font-size: 24px;
+     line-height: 36px;
+     font-style: normal;
  }
 
  #header span {
@@ -176,7 +192,7 @@
 
  /*Features*/
  #features {
-     margin: 2em auto 15em !important;
+     margin: 2em auto !important;
  }
 
  .features {
@@ -184,7 +200,7 @@
  }
 
  .features h2 {
-     font-family: var(--main-font) !important;
+     font-family: var(--header-font) !important;
      font-style: normal;
      font-weight: var(--font-bold) !important;
      font-size: 24px !important;
@@ -211,7 +227,7 @@
  }
 
  .features p {
-     font-family: var(--main-font) !important;
+     font-family: var(--paragraph-font) !important;
      font-style: normal;
      font-weight: var(--font-normal) !important;
      font-size: 24px !important;
@@ -238,7 +254,8 @@
      color: var(--main-color) !important;
      height: 500px !important;
      position: relative !important;
-     margin-bottom: 20em !important;
+     top: -5em;
+     margin-bottom: 15em !important;
  }
 
  .productivity-images {
@@ -276,16 +293,11 @@
  @media(max-width: 1000px) {
      #productivity {
          height: auto !important;
-         background-color: var(--primary-color) !important;
+         background-color: var(--new-sectionbg) !important;
+         position: relative;
+         top: 30em !important;
      }
 
-     .productivity-images {
-         display: flex;
-         flex-direction: column;
-         text-align: center;
-         justify-content: center;
-         align-content: center;
-     }
 
      #productivity #ecllipse_1 {
          display: none !important;
@@ -338,7 +350,7 @@
      left: 14em !important;
  }
 
- #save #iphoneX_2 {
+ #save #iphoneX_3 {
      position: relative !important;
      top: -16.5em !important;
      left: 7em !important;
@@ -367,7 +379,7 @@
          position: relative;
          top: 20em;
          height: auto !important;
-         background-color: var(--primary-color) !important;
+         background-color: var(--new-sectionbg) !important;
      }
 
      .save-content {
@@ -384,7 +396,7 @@
          top: -5em !important;
      }
 
-     #save #iphoneX_2 {
+     #save #iphoneX_3 {
          position: relative !important;
          top: -17em !important;
          left: 0 !important;
@@ -435,8 +447,6 @@
  #footer {
      background-color: var(--tertiary-color) !important;
      color: #fff;
-     position: relative;
-     top: 0;
  }
 
  #footer_text h3 {
@@ -467,4 +477,16 @@
      font-weight: normal;
      font-size: 24px;
      line-height: 32px;
+ }
+
+
+ /*media Queries*/
+
+
+
+ @media(max-width: 1000px) {
+     #footer {
+         position: relative;
+         margin-top: 10em !important;
+     }
  }
