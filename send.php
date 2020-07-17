@@ -16,7 +16,7 @@ if (mysqli_connect_error()) {
      $sql = "INSERT INTO notify_me(email)
      values ('$email')";
      if ($conn->query($sql)) {
-         echo "New record Added successfully";
+         include("success.html");
      }   
      else{
          echo "Error: ". $sql ."<br>".$conn->error;

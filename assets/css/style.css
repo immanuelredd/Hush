@@ -190,6 +190,13 @@
      }
  }
 
+ @media(max-width: 320px) {
+     #header_image {
+         margin-top: 15em !important;
+         margin-bottom: -5em !important;
+     }
+ }
+
  /*Features*/
  #features {
      margin: 2em auto !important;
@@ -236,18 +243,6 @@
      margin: auto;
  }
 
- @media (max-width: 1000px) {
-     #features {
-         margin: 2em auto 20em !important;
-     }
- }
-
- @media (max-width: 480px) {
-     #features {
-         margin: 2em auto 20em !important;
-     }
- }
-
  /*productivity*/
  #productivity {
      background-color: var(--new-sectionbg) !important;
@@ -259,9 +254,7 @@
  }
 
  .productivity-images {
-     position: relative !important;
-     top: 0;
-     bottom: 0;
+     background: url('/assets/images/header_pattern_1.svg');
  }
 
  #productivity #ecllipse_1 {
@@ -342,6 +335,10 @@
      color: var(--main-color) !important;
      height: 500px !important;
      position: relative !important;
+ }
+
+ #save-images {
+     background: url('/assets/images/header_pattern_1.svg');
  }
 
  #save #ecllipse_1 {
@@ -436,12 +433,6 @@
      margin-top: 15em !important;
  }
 
- @media(max-width: 1000px) {
-     #users {
-         position: relative !important;
-         top: 10em !important;
-     }
- }
 
  /*Footer*/
  #footer {
@@ -481,12 +472,136 @@
 
 
  /*media Queries*/
-
-
-
  @media(max-width: 1000px) {
      #footer {
          position: relative;
          margin-top: 10em !important;
+     }
+ }
+
+ @media (width: 1024px) {
+     #features {
+         margin-bottom: -42em !important;
+     }
+ }
+
+ @media (max-width: 1000px) {
+     #features {
+         margin: 2em auto 20em !important;
+     }
+ }
+
+ @media (max-width: 480px) {
+     #features {
+         margin: 2em auto 20em !important;
+     }
+ }
+
+ @media (min-width: 700px) and (max-width: 1000px) {
+     #features {
+         margin: 2em auto -3em !important;
+     }
+ }
+
+ @media(max-width: 1000px) {
+     #users {
+         position: relative !important;
+         top: 10em !important;
+     }
+ }
+
+ @media (min-width: 700px) and (max-width: 1000px) {
+     #productivity {
+         position: relative;
+         top: -20em !important;
+         margin-bottom: -30em !important;
+     }
+
+     .productivity {
+         height: auto !important;
+         background-color: var(--new-sectionbg) !important;
+         position: relative;
+         width: 100%;
+         padding-top: 25em !important;
+     }
+
+     .productivity-content {
+         position: relative !important;
+         padding-top: 20em !important;
+         text-align: center !important;
+     }
+ }
+
+ /* The Modal*/
+
+ #iphone_1,
+ #iphoneX_2,
+ #iphoneX_3,
+ #iphoneX_4,
+ #iphoneX_5,
+ #iphoneX_6 {
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ #iphone_1:hover,
+ #iphoneX_2:hover,
+ #iphoneX_3:hover,
+ #iphoneX_4:hover,
+ #iphoneX_5:hover,
+ #iphoneX_6:hover {
+     filter: brightness(50%);
+ }
+
+ /* The Modal (background) */
+ .modal {
+     display: none;
+     /* Hidden by default */
+     position: fixed;
+     /* Stay in place */
+     z-index: 1;
+     /* Sit on top */
+     padding-top: 10px;
+     /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%;
+     /* Full width */
+     height: 100%;
+     /* Full height */
+     overflow: auto;
+     /* Enable scroll if needed */
+     background-color: var(--extra-color);
+     /* Fallback color */
+     /* Black w/ opacity */
+ }
+
+ .modal-content {
+     background-color: var(--extra-color) !important;
+     border: none !important;
+ }
+
+ /* The Close Button */
+ /* The Close Button */
+ .close {
+     position: absolute;
+     top: 15px;
+     right: 35px;
+     color: var(--primary-color) !important;
+     font-size: 50px !important;
+     font-weight: 900 !important;
+     transition: 0.3s;
+ }
+
+ .close:hover,
+ .close:focus {
+     color: var(--tertiary-color) !important;
+     text-decoration: none;
+ }
+
+ /* 100% Image Width on Smaller Screens */
+ @media only screen and (max-width: 700px) {
+     .modal-content {
+         width: 100%;
      }
  }
